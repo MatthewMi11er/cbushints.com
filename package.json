@@ -1,0 +1,18 @@
+{
+  "name": "cbushints.com",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
+  "homepage": "https://cbushints.com",
+  "repository": {},
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "commitizen": "^2.9.5",
+    "cz-conventional-changelog": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
