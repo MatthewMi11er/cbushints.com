@@ -10,6 +10,7 @@
   "scripts": {
     "build": "node build.js",
     "clean": "rm npm-debug.log*",
+    "lint": "eslint .",
     "start": "run-s build start:browser-sync",
     "start:browser-sync": "browser-sync start -s ./dist"
   },
@@ -23,11 +24,17 @@
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
     "metalsmith": "^2.3.0",
-    "npm-run-all": "^4.0.1"
+    "metalsmith-layouts": "^1.7.0",
+    "metalsmith-sass": "^1.4.0",
+    "npm-run-all": "^4.0.1",
+    "pug": "^2.0.0-beta9"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "picnic": "^6.3.2"
   }
 }
