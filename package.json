@@ -6,9 +6,18 @@
   "homepage": "https://cbushints.com",
   "repository": {},
   "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "clean": "rm npm-debug.log*"
+  },
   "devDependencies": {
     "commitizen": "^2.9.5",
-    "cz-conventional-changelog": "^1.2.0"
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   },
   "config": {
     "commitizen": {
