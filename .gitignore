@@ -1,6 +1,9 @@
 # Dependency directories
 /node_modules/
 
+# Firebase
+/firebase-debug.log
+
 # Logs
 /npm-debug.log*
 
