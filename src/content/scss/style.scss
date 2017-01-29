@@ -5,8 +5,9 @@ $black: #333;
 $white: #ddd;
 
 body {
-  background-color: #13185a;
-  background-image: url("/img/background.svg");
+  background-color: $black;
+  background: url("/img/ColumbusSkyLineRiver.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .hero {
