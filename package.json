@@ -14,8 +14,8 @@
     "deploy:firebase": "firebase deploy",
     "lint": "eslint .",
     "start": "run-s build && run-p start:*",
-    "start:browser-sync": "browser-sync start --proxy 'localhost:5000' --files dist/",
-    "start:firebase": "firebase serve"
+    "start:1-firebase": "firebase serve",
+    "start:2-browser-sync": "browser-sync start --config bs-config.js"
   },
   "devDependencies": {
     "browser-sync": "^2.18.6",

@@ -21,7 +21,7 @@ Metalsmith(__dirname)
     rename: true,
   }))
   .use(sass({
-    outputDir: originalPath => originalPath.replace("scss", "css"),
+    outputDir: originalPath => originalPath.replace('scss', 'css'),
   }))
   .build((err) => {
     if (err) {
