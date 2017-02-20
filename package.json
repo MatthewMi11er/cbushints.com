@@ -11,7 +11,7 @@
   "scripts": {
     "build": "babel-node app.js --deploy",
     "clean": "rm npm-debug.log*",
-    "deploy": "run-s 'build deploy:firebase",
+    "deploy": "run-s build deploy:firebase",
     "deploy:firebase": "firebase deploy",
     "lint": "eslint .",
     "start": "babel-node app.js"
