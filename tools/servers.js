@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+
 import { spawn, ChildProcess } from 'child_process';
 import { create as bsCreate, has as bsHas, get as bsGet } from 'browser-sync';
 
@@ -38,21 +39,23 @@ export class BrowserSync {
     this.proxy.start();
 
     // Give proxy time to start
-    setTimeout(() =>{this.bs.init({
-      proxy: {
-        target: 'http://localhost:5000',
-        proxyRes: [
-          (proxyRes) => {
-            /**
-             * This header interferes with browser-sync
-             * so remove it for dev.
-             */
-            const headers = proxyRes.headers;
-            delete headers['content-security-policy'];
-          },
-        ],
-      },
-    })}, 3000);
+    setTimeout(() => {
+      this.bs.init({
+        proxy: {
+          target: 'http://localhost:5000',
+          proxyRes: [
+            (proxyRes) => {
+              /**
+               * This header interferes with browser-sync
+               * so remove it for dev.
+               */
+              const headers = proxyRes.headers;
+              delete headers['content-security-policy'];
+            },
+          ],
+        },
+      });
+    }, 3000);
   }
   watch(build) {
     this.bs.watch('src/').on('change', () => {

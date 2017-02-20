@@ -13,7 +13,7 @@ build();
  * Don't run the dev server when we're deploying
  */
 if (!argv.deploy) {
-  const bs = new BrowserSync('TestServer', new Firebase);
+  const bs = new BrowserSync('TestServer', new Firebase());
   bs.start(bs.reload);
   bs.watch(build);
 }
