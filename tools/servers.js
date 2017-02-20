@@ -6,6 +6,7 @@ import { create as bsCreate, has as bsHas, get as bsGet } from 'browser-sync';
 export class Firebase {
   constructor() {
     this.firebase = null;
+    process.on('exit', () => { this.stop(); });
   }
   start() {
     if (!(this.firebase instanceof ChildProcess)) {
@@ -58,8 +59,9 @@ export class BrowserSync {
     }, 3000);
   }
   watch(build) {
+    const reload = this.bs.reload;
     this.bs.watch('src/').on('change', () => {
-      build();
+      build(reload);
     });
     this.bs.watch('./firebase.json').on('change', () => {
       this.proxy.restart();
