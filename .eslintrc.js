@@ -4,6 +4,7 @@ module.exports = {
     "import"
   ],
   "rules": {
-   "complexity": [2, 6]
-  }
+    "complexity": [2, 6],
+    "valid-jsdoc": ["error"],
+  },
 };

@@ -17,7 +17,7 @@
   "scripts": {
     "build": "babel-node lib/build.js --buildOnly",
     "clean": "rimraf dist firebase-debug.log npm-debug.log",
-    "deploy": "run-s clean build deploy:firebase",
+    "deploy": "run-s lint clean build deploy:firebase",
     "deploy:firebase": "firebase deploy",
     "lint": "eslint .",
     "lint:fix": "run-s 'lint -- --fix'",
