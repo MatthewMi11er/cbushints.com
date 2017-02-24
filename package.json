@@ -37,10 +37,10 @@
     "metalsmith-layouts": "1.8.0",
     "metalsmith-sass": "1.4.0",
     "minimist": "1.2.0",
-    "npm-run-all": "4.0.1",
+    "npm-run-all": "4.0.2",
     "picnic": "6.3.2",
     "pug": "2.0.0-beta9",
-    "rimraf": "2.6.0"
+    "rimraf": "2.6.1"
   },
   "devDependencies": {},
   "config": {
