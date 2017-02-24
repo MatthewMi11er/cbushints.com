@@ -2,11 +2,12 @@
   "name": "cbushints.com",
   "description": "",
   "version": "1.0.0",
+  "homepage": "https://cbushints.com",
   "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
-  "contributors": [],
+  "contributors": ["Jonathan Briehl"],
   "license": "UNLICENSED",
   "private": true,
-  "homepage": "https://cbushints.com",
+
   "repository": {
     "type": "git",
     "url": "https://github.com/cbushints/cbushints.com.git"
@@ -29,7 +30,7 @@
     "browser-sync": "2.18.8",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
-    "eslint": "3.16.0",
+    "eslint": "3.16.1",
     "eslint-config-airbnb-base": "11.1.0",
     "eslint-plugin-import": "2.2.0",
     "firebase-tools": "3.3.0",

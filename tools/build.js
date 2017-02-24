@@ -6,7 +6,7 @@ import Metalsmith from 'metalsmith';
 import sass from 'metalsmith-sass';
 import path from 'path';
 
-export default function ( reload = () => {}) {
+export default function (reload = () => {}) {
   Metalsmith(path.dirname(__dirname))
     .metadata({
       site: {
