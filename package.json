@@ -15,7 +15,7 @@
     "url": "https://github.com/cbushints/cbushints.com/issues"
   },
   "scripts": {
-    "build": "babel-node lib/app.js --deploy",
+    "build": "babel-node lib/app.js --buildOnly",
     "clean": "rimraf dist firebase-debug.log npm-debug.log",
     "deploy": "run-s clean build deploy:firebase",
     "deploy:firebase": "firebase deploy",
