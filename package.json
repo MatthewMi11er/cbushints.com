@@ -48,5 +48,15 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [[
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]]
   }
 }
