@@ -1,12 +1,9 @@
 # Dependency directories
 /node_modules/
 
-# Firebase
-/firebase-debug.log
-
 # Logs
+/firebase-debug.log
 /npm-debug.log*
 
 # Output
 /dist/
-.idea
