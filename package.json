@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "homepage": "https://cbushints.com",
   "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
-  "contributors": ["Jonathan Briehl"],
+  "contributors": [
+    "Jonathan Briehl"
+  ],
   "license": "UNLICENSED",
   "private": true,
   "repository": {
@@ -25,14 +27,14 @@
   },
   "dependencies": {
     "babel-cli": "6.23.0",
-    "babel-preset-env": "1.1.9",
+    "babel-preset-env": "1.1.10",
     "browser-sync": "2.18.8",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
     "eslint": "3.16.1",
     "eslint-config-airbnb-base": "11.1.0",
     "eslint-plugin-import": "2.2.0",
-    "firebase-tools": "3.3.0",
+    "firebase-tools": "3.4.0",
     "metalsmith": "2.3.0",
     "metalsmith-layouts": "1.8.0",
     "metalsmith-sass": "1.4.0",
@@ -49,13 +51,15 @@
     }
   },
   "babel": {
-    "presets": [[
-      "env",
-      {
-        "targets": {
-          "node": "current"
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
         }
-      }
-    ]]
+      ]
+    ]
   }
 }
