@@ -19,7 +19,7 @@
   "scripts": {
     "build": "babel-node lib/build.js --buildOnly",
     "clean": "rimraf dist firebase-debug.log npm-debug.log",
-    "deploy": "run-s lint clean build deploy:firebase",
+    "deploy": "run-s lint clean 'build -- --production' deploy:firebase",
     "deploy:firebase": "firebase deploy",
     "lint": "eslint .",
     "lint:fix": "run-s 'lint -- --fix'",
@@ -48,7 +48,8 @@
     "pug": "2.0.0-beta9",
     "queue": "4.2.1",
     "rimraf": "2.6.1",
-    "webpack": "2.2.1"
+    "webpack": "2.2.1",
+    "webpack-merge": "3.0.0"
   },
   "devDependencies": {},
   "config": {

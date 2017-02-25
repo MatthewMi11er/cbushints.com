@@ -1,6 +1,11 @@
-const path = require('path');
+import minimist from 'minimist';
+import path from 'path';
+import webpack from 'webpack';
+import merge from 'webpack-merge';
 
-module.exports = {
+const argv = minimist(process.argv);
+
+const config = {
   entry: './src/design/js/main.js',
   output: {
     path: 'dist/js',
@@ -38,3 +43,28 @@ module.exports = {
     },
   },
 };
+
+let production = {};
+if (argv.production) {
+  production = {
+    plugins: [
+      new webpack.LoaderOptionsPlugin({
+        minimize: true,
+        debug: false,
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        beautify: false,
+        mangle: {
+          screw_ie8: true,
+          keep_fnames: true,
+        },
+        compress: {
+          screw_ie8: true,
+        },
+        comments: false,
+      }),
+    ],
+  };
+}
+
+export default merge(config, production);
