@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "babel-cli": "6.23.0",
+    "babel-core": "6.23.1",
+    "babel-loader": "6.3.2",
     "babel-preset-env": "1.1.10",
     "browser-sync": "2.18.8",
     "commitizen": "2.9.6",
@@ -39,10 +41,14 @@
     "metalsmith-layouts": "1.8.0",
     "metalsmith-sass": "1.4.0",
     "minimist": "1.2.0",
+    "modernizr": "3.3.1",
+    "modernizr-loader": "1.0.1",
     "npm-run-all": "4.0.2",
     "picnic": "6.3.2",
     "pug": "2.0.0-beta9",
-    "rimraf": "2.6.1"
+    "queue": "4.2.1",
+    "rimraf": "2.6.1",
+    "webpack": "2.2.1"
   },
   "devDependencies": {},
   "config": {

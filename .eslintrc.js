@@ -7,4 +7,7 @@ module.exports = {
     "complexity": [2, 6],
     "valid-jsdoc": ["error"],
   },
+  "env": {
+    "browser": true
+  }
 };
