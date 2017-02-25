@@ -7,25 +7,28 @@ module.exports = {
     filename: 'main.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules|bower_components/,
-        loader: 'babel-loader',
-        query: {
-          presets: [[
-            'env',
-            {
-              targets: {
-                browsers: ['last 2 versions', 'safari >= 7'],
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            presets: [[
+              'env',
+              {
+                modules: false,
+                targets: {
+                  browsers: ['last 2 versions', 'safari >= 7'],
+                },
               },
-            },
-          ]],
-        },
+            ]],
+          },
+        }],
       },
       {
         test: /modernizr.js$/,
-        loader: 'modernizr-loader',
+        use: ['modernizr-loader'],
       },
     ],
   },
